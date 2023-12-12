@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-color: #0583F2;
+    --main-bg-color: #fbf4f8;
+    --second--bg-color: #F2DCE8;
+    --third-bg-color: white;
+    --main-text-color: black;
+    --second-text-color: gray;
+    --third-text-color: white;
+    --shadow-color: #fa2bb2;
+}
+body{
+    height: 100vh;
+}
+
+.loginformWrapper{
+    margin: auto;
+    padding: 20px 60px;
+    border-radius: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    
+    background-color: transparent;
+
+}
+
+.logo{
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.title{
+    color: var(--main-color);
+    font-size: 30px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+.inpuContainer{
+    width: 100%;
+    border: 1.5px solid var(--main-color);
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--main-color);
+    background-color: var(--third-bg-color);
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    position: absolute;
+    left: 16px;
+
+    transition: transform 0.3s;
+}
+
+.icon{
+    position: absolute;
+    right: 12px;
+}
+
+input{
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: transparent;
+
+}
+input:focus{
+    outline: 2px solid var(--main-color);
+}
+
+input:focus + label {
+    transform: translateY(-24px);
+}
+button{
+    border-radius: 30px;
+    height: 45px;
+    background-color: var(--main-color);
+    color:white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--main-color);
+}
